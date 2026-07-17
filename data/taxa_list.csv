@@ -1,4 +1,4 @@
-taxa,reference,species,fasta
-Dehalococcoides mccartyi 195,GCF_000011905.1,dehalococcoides_mccartyi,/hpcfs/users/a1844642/project/taxonomic_classification/data/index_dataset/GCF_000011905.1_ASM1190v1_genomic.fna.gz
-Thermoplasma acidophilum DSM 1728,GCF_000195915.1,thermoplasma_acidophilum,/hpcfs/users/a1844642/project/taxonomic_classification/data/index_dataset/GCF_000195915.1_ASM19591v1_genomic.fna.gz
-Gossypium arboreum,GCF_025698485.1,gossypium_arboreum,/hpcfs/users/a1844642/project/taxonomic_classification/data/index_dataset/GCF_025698485.1_ASM2569848v2_genomic.fna.gz
+taxa,reference,species,fasta,tax_id
+Dehalococcoides mccartyi 195,GCF_000011905.1,dehalococcoides_mccartyi,/hpcfs/users/a1844642/project/taxonomic_classification/data/index_dataset/GCF_000011905.1_ASM1190v1_genomic.fna.gz,243164
+Thermoplasma acidophilum DSM 1728,GCF_000195915.1,thermoplasma_acidophilum,/hpcfs/users/a1844642/project/taxonomic_classification/data/index_dataset/GCF_000195915.1_ASM19591v1_genomic.fna.gz,273075
+Gossypium arboreum,GCF_025698485.1,gossypium_arboreum,/hpcfs/users/a1844642/project/taxonomic_classification/data/index_dataset/GCF_025698485.1_ASM2569848v2_genomic.fna.gz,29729
