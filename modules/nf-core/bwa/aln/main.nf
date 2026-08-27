@@ -20,7 +20,7 @@ process BWA_ALN {
 
     script:
     def args   = task.ext.args   ?: ''
-    def prefix = task.ext.prefix ?: "${meta.id}"
+    def prefix = task.ext.prefix ?: "${meta}_${meta2}"
 
     if (meta.single_end) {
         """
