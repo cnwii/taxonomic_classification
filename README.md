@@ -56,9 +56,9 @@ nextflow run nf-core/taxonomic_classification \
    --input samplesheet.csv \
    --outdir <OUTDIR>
 ```
-To modify parameters and the path for BLASTn database, open nextflow.config
-To modify time, memory, and any other resources used for each tool, open config/modules.config
-The default process will use BWA. To use Bowtie2, add --run-bowtie2
+To modify parameters and the path for BLASTn database, open nextflow.config. 
+To modify time, memory, and any other resources used for each tool, open config/modules.config. 
+The default process will use BWA. To use Bowtie2, add --run-bowtie2. 
 
 > [!WARNING]
 > Please provide pipeline parameters via the CLI or Nextflow `-params-file` option. Custom config files including those provided by the `-c` Nextflow option can be used to provide any configuration _**except for parameters**_; see [docs](https://nf-co.re/docs/usage/getting_started/configuration#custom-configuration-files).
