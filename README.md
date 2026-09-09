@@ -14,7 +14,7 @@
 
 ## Introduction
 
-**nf-core/taxonomic_classification** is a bioinformatics pipeline that ...
+**nf-core/taxonomic_classification** is a bioinformatics pipeline for analysing, profiling specific taxa from metagenomic samples, and assessing damage. 
 
 <!-- TODO nf-core:
    Complete this sentence with a 2-3 sentence summary of what types of data the pipeline ingests, a brief overview of the
@@ -31,8 +31,7 @@
 > [!NOTE]
 > If you are new to Nextflow and nf-core, please refer to [this page](https://nf-co.re/docs/usage/installation) on how to set-up Nextflow. Make sure to [test your setup](https://nf-co.re/docs/usage/introduction#how-to-run-a-pipeline) with `-profile test` before running the workflow on actual data.
 
-<!-- TODO nf-core: Describe the minimum required steps to execute the pipeline, e.g. how to prepare samplesheets.
-     Explain what rows and columns represent. For instance (please edit as appropriate):
+
 
 First, prepare a samplesheet with your input data that looks as follows:
 
@@ -43,11 +42,11 @@ sample,fastq_1,fastq_2
 CONTROL_REP1,AEG588A1_S1_L002_R1_001.fastq.gz,AEG588A1_S1_L002_R2_001.fastq.gz
 ```
 
-Each row represents a fastq file (single-end) or a pair of fastq files (paired end).
+Each row represents a fastq file (single-end) or a pair of fastq files (paired end). If the data is single-end, leave the fastq_2 column empty and keep the comma at the end.
 
 -->
 
-Now, you can run the pipeline using:
+Now, you can run the pipeline using: bash run.sh in the directory where you would store log files.
 
 <!-- TODO nf-core: update the following command to include all required parameters for a minimal example -->
 
@@ -57,6 +56,9 @@ nextflow run nf-core/taxonomic_classification \
    --input samplesheet.csv \
    --outdir <OUTDIR>
 ```
+To modify parameters and the path for BLASTn database, open nextflow.config
+To modify time, memory, and any other resources used for each tool, open config/modules.config
+The default process will use BWA. To use Bowtie2, add --run-bowtie2
 
 > [!WARNING]
 > Please provide pipeline parameters via the CLI or Nextflow `-params-file` option. Custom config files including those provided by the `-c` Nextflow option can be used to provide any configuration _**except for parameters**_; see [docs](https://nf-co.re/docs/usage/getting_started/configuration#custom-configuration-files).
